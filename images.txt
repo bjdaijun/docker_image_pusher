@@ -5,5 +5,5 @@
 #xhofe/alist:latest
 #支持指定架构
 #--platform=linux/arm64 xiaoyaliu/alist
---platform=linux/arm64 caddy:2.8.4
+--platform=linux/arm64 caddy:2.4.6
 
