@@ -6,5 +6,5 @@
 #支持指定架构
 #--platform=linux/arm64 xiaoyaliu/alist
 #--platform=linux/arm64 caddy:2.4.6
-nvidia/cuda:12.0.1-cudnn8-runtime-ubuntu22.04
-
+#nvidia/cuda:12.0.1-cudnn8-runtime-ubuntu22.04
+bitnami/openldap:2.6.8
