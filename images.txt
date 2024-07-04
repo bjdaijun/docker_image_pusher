@@ -8,4 +8,7 @@
 #--platform=linux/arm64 caddy:2.4.6
 #nvidia/cuda:12.0.1-cudnn8-runtime-ubuntu22.04
 #bitnami/openldap:2.6.8
-valkey/valkey:7.2.5
+#valkey/valkey:7.2.5
+grafana/loki:2.9.2
+grafana/promtail:2.9.2
+grafana/grafana:latest
