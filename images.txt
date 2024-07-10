@@ -1,4 +1,4 @@
-#caddy:2.7.6
+caddy:2.8.4
 #ubuntu:20.04
 #支持私库
 #k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
@@ -13,4 +13,4 @@
 #grafana/promtail:2.9.2
 #grafana/grafana:latest
 
-docker.osgeo.org/geoserver:2.25.2
+#docker.osgeo.org/geoserver:2.25.2
