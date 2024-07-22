@@ -1,4 +1,4 @@
---platform=linux/arm64 registry.cn-zhangjiakou.aliyuncs.com/mapaas/cgs-server-arm
+--platform=linux/arm64 minio/minio:RELEASE.2022-05-23T18-45-11Z
 #mongo:4.4.29
 #caddy:2.8.4
 #ubuntu:20.04
