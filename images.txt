@@ -1,4 +1,5 @@
---platform=linux/arm64 mongo:4.4.29
+--platform=linux/arm64 registry.cn-zhangjiakou.aliyuncs.com/mapaas/cgs-server-arm
+#mongo:4.4.29
 #caddy:2.8.4
 #ubuntu:20.04
 #支持私库
