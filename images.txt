@@ -5,8 +5,10 @@
 #--platform=linux/arm64 mongo:4.4.2
 #--platform=linux/arm64 minio/minio:RELEASE.2022-05-23T18-45-11Z
 #--platform=linux/arm64 mysql:8.4.2
---platform=linux/arm64 timescale/timescaledb:2.11.1-pg15
---platform=linux/arm64 dpage/pgadmin4:8.10
+#--platform=linux/arm64 timescale/timescaledb:2.11.1-pg15
+#--platform=linux/arm64 dpage/pgadmin4:8.10
+--platform=linux/arm64 emqx/emqx:5.1.0
+
 
 
 
