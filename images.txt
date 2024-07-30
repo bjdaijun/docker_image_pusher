@@ -5,7 +5,7 @@
 #--platform=linux/arm64 mongo:4.4.2
 #--platform=linux/arm64 minio/minio:RELEASE.2022-05-23T18-45-11Z
 #--platform=linux/arm64 mysql:8.4.2
---platform=linux/arm64 geoserver:2.25.2
+--platform=linux/arm64 docker.osgeo.org/geoserver:2.25.2
 
 #minio/minio:RELEASE.2022-05-23T18-45-11Z
 #golang:1.20.6-alpine3.18
