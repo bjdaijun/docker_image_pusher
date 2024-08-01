@@ -9,7 +9,9 @@
 #--platform=linux/arm64 dpage/pgadmin4:8.10
 #--platform=linux/arm64 emqx/emqx:5.5.0
 #--platform=linux/arm64 openjdk:8-jdk-bullseye
---platform=linux/arm64 tomcat:9.0.91-jdk11-temurin-jammy
+--platform=linux/arm64 node:16.20.2-alpine3.18
+
+#tomcat:9.0.91-jdk11-temurin-jammy
 
 #fauria/vsftpd
 
