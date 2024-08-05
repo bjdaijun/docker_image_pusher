@@ -12,10 +12,10 @@
 #--platform=linux/arm64 node:16.20.2-alpine3.18
 #--platform=linux/arm64 alpine:3.18
 #alpine:3.18
---platform=linux/arm64 golang:1.22.2-alpine3.19
-golang:1.22.2-alpine3.19
+# --platform=linux/arm64 golang:1.22.2-alpine3.19
+# golang:1.22.2-alpine3.19
 #tomcat:9.0.91-jdk11-temurin-jammy
-
+zabbix/zabbix-agent:latest
 #fauria/vsftpd
 
 
