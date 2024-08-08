@@ -17,8 +17,8 @@
 #tomcat:9.0.91-jdk11-temurin-jammy
 #zabbix/zabbix-agent:latest
 #fauria/vsftpd
-ghcr.io/developmentseed/titiler:0.18.5
-
+# ghcr.io/developmentseed/titiler:0.18.5
+docker.osgeo.org/geoserver:2.22.0
 
 
 
