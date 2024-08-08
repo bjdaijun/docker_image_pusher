@@ -18,7 +18,7 @@
 #zabbix/zabbix-agent:latest
 #fauria/vsftpd
 # ghcr.io/developmentseed/titiler:0.18.5
-docker.osgeo.org/geoserver:2.22.0
+docker.osgeo.org/geoserver:2.10.5
 
 
 
