@@ -19,8 +19,10 @@
 #fauria/vsftpd
 # ghcr.io/developmentseed/titiler:0.18.5
 # docker.osgeo.org/geoserver:2.10.5
-openjdk:8
---platform=linux/arm64 openjdk:8
+#openjdk:8
+#--platform=linux/arm64 openjdk:8
+redis:7.2.5
+--platform=linux/arm64 redis:7.2.5
 
 
 
