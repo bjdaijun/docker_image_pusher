@@ -1,3 +1,7 @@
+# registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
+# registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
+
+
 #monibuca/console:latest
 #node:16.20.2-alpine3.18
 
