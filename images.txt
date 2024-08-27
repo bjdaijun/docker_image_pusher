@@ -28,7 +28,8 @@
 
 #minio/minio:RELEASE.2022-05-23T18-45-11Z
 #golang:1.20.6-alpine3.18
-golang:1.23.0-alpine3.20
+#golang:1.23.0-alpine3.20
+golang:1.23.0-bullseye
 #mongo:4.4.29
 #caddy:2.8.4
 #ubuntu:20.04
