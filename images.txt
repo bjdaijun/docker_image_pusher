@@ -28,8 +28,10 @@
 #redis:7.2.5
 #--platform=linux/arm64 redis:7.2.5
 
-jupyterhub/jupyterhub:5.1.0
-
+#jupyterhub/jupyterhub:5.1.0
+grafana/loki:latest
+grafana/promtail:latest
+grafana/grafana:latest
 #ubuntu:22.04
 #--platform=linux/arm64 ubuntu:22.04
 #minio/minio:RELEASE.2022-05-23T18-45-11Z
