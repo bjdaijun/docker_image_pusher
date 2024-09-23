@@ -8,7 +8,7 @@
 #mysql:5.7
 #milvusbootcamp/img-search-server:2.2.10
 #milvusbootcamp/img-search-client:2.2.10
-apache/kafka:3.8.0
+#apache/kafka:3.8.0
 #bitnami/kafka:3.3.2
 
 #monibuca/console:latest
@@ -30,6 +30,7 @@ apache/kafka:3.8.0
 #tomcat:9.0.91-jdk11-temurin-jammy
 #zabbix/zabbix-agent:latest
 #fauria/vsftpd
+--platform=linux/arm64 fauria/vsftpd
 # ghcr.io/developmentseed/titiler:0.18.5
 # docker.osgeo.org/geoserver:2.10.5
 #openjdk:8
