@@ -2,7 +2,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-
+--platform=linux/arm64 paketobuildpacks/oracle:latest
 #minio/minio:RELEASE.2023-03-20T20-16-18Z
 #milvusdb/milvus:v2.2.10
 #mysql:5.7
@@ -30,7 +30,7 @@
 #tomcat:9.0.91-jdk11-temurin-jammy
 #zabbix/zabbix-agent:latest
 #fauria/vsftpd
---platform=linux/arm64 cameronsabuda/vsftpd
+# --platform=linux/arm64 cameronsabuda/vsftpd
 # ghcr.io/developmentseed/titiler:0.18.5
 # docker.osgeo.org/geoserver:2.10.5
 #openjdk:8
