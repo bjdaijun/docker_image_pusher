@@ -1,7 +1,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-
+gitea/act_runner:latest
 #--platform=linux/arm64 paketobuildpacks/oracle:latest
 #--platform=linux/arm64  apecloud/oracle:19.3.0-ee
 #--platform=linux/arm64  hjdyzy/oracle:19.3.0-ee
@@ -15,7 +15,7 @@
 
 #monibuca/console:latest
 #node:16.20.2-alpine3.18
-openjdk:8-jdk-bullseye
+#openjdk:8-jdk-bullseye
 #--platform=linux/arm64 golang:1.20.6-alpine3.18
 #--platform=linux/arm64 mongo:4.4.2
 #--platform=linux/arm64 minio/minio:RELEASE.2022-05-23T18-45-11Z
