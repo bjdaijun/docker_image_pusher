@@ -4,7 +4,7 @@
 
 #--platform=linux/arm64 paketobuildpacks/oracle:latest
 #--platform=linux/arm64  apecloud/oracle:19.3.0-ee
---platform=linux/arm64  hjdyzy/oracle:19.3.0-ee
+#--platform=linux/arm64  hjdyzy/oracle:19.3.0-ee
 #minio/minio:RELEASE.2023-03-20T20-16-18Z
 #milvusdb/milvus:v2.2.10
 #mysql:5.7
@@ -15,7 +15,7 @@
 
 #monibuca/console:latest
 #node:16.20.2-alpine3.18
-
+openjdk:8-jdk-bullseye
 #--platform=linux/arm64 golang:1.20.6-alpine3.18
 #--platform=linux/arm64 mongo:4.4.2
 #--platform=linux/arm64 minio/minio:RELEASE.2022-05-23T18-45-11Z
