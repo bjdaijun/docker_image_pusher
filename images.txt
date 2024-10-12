@@ -1,7 +1,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-#gitea/act_runner:latest
+gitea/act_runner:latest
 #--platform=linux/arm64 paketobuildpacks/oracle:latest
 #--platform=linux/arm64  apecloud/oracle:19.3.0-ee
 #--platform=linux/arm64  hjdyzy/oracle:19.3.0-ee
@@ -13,7 +13,7 @@
 #apache/kafka:3.8.0
 #bitnami/kafka:3.3.2
 #node:16.20.1
-debian:12.7
+#debian:12.7
 #monibuca/console:latest
 #node:16.20.2-alpine3.18
 #openjdk:8-jdk-bullseye
