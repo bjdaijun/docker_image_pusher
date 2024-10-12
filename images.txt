@@ -12,7 +12,8 @@
 #milvusbootcamp/img-search-client:2.2.10
 #apache/kafka:3.8.0
 #bitnami/kafka:3.3.2
-node:16.20.1
+#node:16.20.1
+debian:12.7
 #monibuca/console:latest
 #node:16.20.2-alpine3.18
 #openjdk:8-jdk-bullseye
