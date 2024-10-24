@@ -1,6 +1,18 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
+
+
+
+
+openebs/node-disk-exporter:2.1.0
+openebs/node-disk-manager:2.1.0
+openebs/node-disk-operator:2.1.0
+openebs/provisioner-localpv:3.4.0
+
+
+
+
 #gitea/act_runner:latest
 #--platform=linux/arm64 paketobuildpacks/oracle:latest
 #--platform=linux/arm64  apecloud/oracle:19.3.0-ee
@@ -15,7 +27,7 @@
 #node:16.20.1
 #debian:12.7
 #debian:11.11
---platform=linux/arm64 kiwabbot/python-orc:12-19
+#--platform=linux/arm64 kiwabbot/python-orc:12-19
 #monibuca/console:latest
 #node:16.20.2-alpine3.18
 #openjdk:8-jdk-bullseye
