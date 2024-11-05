@@ -2,10 +2,10 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
+ubuntu:22.04
 
-
-rustdesk/rustdesk-server:latest
-rustdesk/rustdesk-server:latest
+#rustdesk/rustdesk-server:latest
+#rustdesk/rustdesk-server:latest
 
 #quay.io/external_storage/nfs-client-provisioner:latest
 
