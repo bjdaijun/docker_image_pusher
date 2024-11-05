@@ -2,7 +2,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-ubuntu:22.04
+ubuntu:24.04
 
 #rustdesk/rustdesk-server:latest
 #rustdesk/rustdesk-server:latest
