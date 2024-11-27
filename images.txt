@@ -6,7 +6,7 @@
 #multiarch/qemu-user-static
 #rustdesk/rustdesk-server:latest
 #rustdesk/rustdesk-server:latest
-victoriametrics/victoria-metrics:v1.106.1
+#victoriametrics/victoria-metrics:v1.106.1
 #quay.io/external_storage/nfs-client-provisioner:latest
 
 #openebs/node-disk-exporter:2.1.0
@@ -61,9 +61,9 @@ victoriametrics/victoria-metrics:v1.106.1
 #--platform=linux/arm64 redis:7.2.5
 
 #jupyterhub/jupyterhub:5.1.0
-#grafana/loki:latest
-#grafana/promtail:latest
-#grafana/grafana:latest
+grafana/loki:3.3.0
+grafana/promtail:3.3.0
+grafana/grafana:3.3.0
 #ubuntu:22.04
 #--platform=linux/arm64 ubuntu:22.04
 #minio/minio:RELEASE.2022-05-23T18-45-11Z
