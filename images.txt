@@ -3,10 +3,10 @@
 #moby/buildkit:buildx-stable-1
 #docker/binfmt:66f9012c56a8316f9244ffd7622d7c21c1f6f28d
 #ubuntu:24.04
-multiarch/qemu-user-static
+#multiarch/qemu-user-static
 #rustdesk/rustdesk-server:latest
 #rustdesk/rustdesk-server:latest
-
+victoriametrics/victoria-metrics:v1.106.1
 #quay.io/external_storage/nfs-client-provisioner:latest
 
 #openebs/node-disk-exporter:2.1.0
