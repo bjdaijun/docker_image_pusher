@@ -1,5 +1,17 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
+
+
+
+
+
+
+
+linuxserver/wireguard:latest
+ngoduykhanh/wireguard-ui:latest
+
+
+
 #moby/buildkit:buildx-stable-1
 #docker/binfmt:66f9012c56a8316f9244ffd7622d7c21c1f6f28d
 #ubuntu:24.04
@@ -61,9 +73,9 @@
 #--platform=linux/arm64 redis:7.2.5
 
 #jupyterhub/jupyterhub:5.1.0
-grafana/loki:3.3.0
-grafana/promtail:3.3.0
-grafana/grafana:11.3.1
+#grafana/loki:3.3.0
+#grafana/promtail:3.3.0
+#grafana/grafana:11.3.1
 #ubuntu:22.04
 #--platform=linux/arm64 ubuntu:22.04
 #minio/minio:RELEASE.2022-05-23T18-45-11Z
