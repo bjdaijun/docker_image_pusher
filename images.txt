@@ -4,9 +4,11 @@
 
 
 
+--platform=linux/arm64 grafana/loki:3.3.0
+--platform=linux/arm64 grafana/promtail:3.3.0
+--platform=linux/arm64 grafana/grafana:11.3.1
 
-
-ghcr.io/wg-easy/wg-easy
+#ghcr.io/wg-easy/wg-easy
 #linuxserver/wireguard:latest
 #ngoduykhanh/wireguard-ui:latest
 
