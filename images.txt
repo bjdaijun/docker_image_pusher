@@ -3,10 +3,14 @@
 
 
 
+pasteme/frontend:3.4.2
+pasteme/go-backend:3.5.2
+mysql:5.5
 
---platform=linux/arm64 grafana/loki:3.3.0
---platform=linux/arm64 grafana/promtail:3.3.0
---platform=linux/arm64 grafana/grafana:11.3.1
+
+#--platform=linux/arm64 grafana/loki:3.3.0
+#--platform=linux/arm64 grafana/promtail:3.3.0
+#--platform=linux/arm64 grafana/grafana:11.3.1
 
 #ghcr.io/wg-easy/wg-easy
 #linuxserver/wireguard:latest
