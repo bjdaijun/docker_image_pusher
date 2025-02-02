@@ -1,11 +1,26 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
+langgenius/dify-api:0.15.2
+langgenius/dify-web:0.15.2
+postgres:15-alpine
+redis:6-alpine
+langgenius/dify-sandbox:0.2.10
+certbot/certbot
+nginx:latest
+pingcap/tidb:v8.4.0
+semitechnologies/weaviate:1.19.0
+langgenius/qdrant:v1.7.3
+pgvector/pgvector:pg16
+tensorchord/pgvecto-rs:pg16-v0.3.0
+ghcr.io/chroma-core/chroma:0.5.20
+quay.io/oceanbase/oceanbase-ce:4.3.3.0-100000142024101215
 
 
-pasteme/frontend:3.4.2
-pasteme/go-backend:3.5.2
-mysql:5.5
+
+#pasteme/frontend:3.4.2
+#pasteme/go-backend:3.5.2
+#mysql:5.5
 
 
 #--platform=linux/arm64 grafana/loki:3.3.0
