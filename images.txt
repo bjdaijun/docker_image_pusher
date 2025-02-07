@@ -1,8 +1,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-
-semitechnologies/weaviate:1.19.0
+searxng/searxng
+#semitechnologies/weaviate:1.19.0
 #ubuntu/squid:latest
 #langgenius/dify-api:0.15.2
 #langgenius/dify-web:0.15.2
