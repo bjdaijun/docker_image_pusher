@@ -1,10 +1,10 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-ghcr.io/open-webui/open-webui:main
+#ghcr.io/open-webui/open-webui:main
 
 
-
+mintplexlabs/anythingllm
 #searxng/searxng
 #semitechnologies/weaviate:1.19.0
 #ubuntu/squid:latest
