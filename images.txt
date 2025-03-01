@@ -3,14 +3,14 @@
 
 #ghcr.io/open-webui/open-webui:main
 
-
+--platform=linux/arm64 caddy:2.7.6
 #mintplexlabs/anythingllm
 #searxng/searxng
 #semitechnologies/weaviate:1.19.0
 #ubuntu/squid:latest
-langgenius/dify-api:0.15.3
-langgenius/dify-web:0.15.3
-langgenius/dify-plugin-daemon:0.0.2-local
+#langgenius/dify-api:0.15.3
+#langgenius/dify-web:0.15.3
+#langgenius/dify-plugin-daemon:0.0.2-local
 #postgres:15-alpine
 #redis:6-alpine
 #langgenius/dify-sandbox:0.2.10
