@@ -2,8 +2,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 #ghcr.io/open-webui/open-webui:main
-
---platform=linux/arm64 caddy:2.7.6
+zlmediakit/zlmediakit:master
+#--platform=linux/arm64 caddy:2.7.6
 #mintplexlabs/anythingllm
 #searxng/searxng
 #semitechnologies/weaviate:1.19.0
