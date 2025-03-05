@@ -1,8 +1,9 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
+ghcr.io/deepch/rtsptoweb:latest
 
-langhuihui/monibuca:latest
+#langhuihui/monibuca:latest
 #ghcr.io/open-webui/open-webui:main
 #zlmediakit/zlmediakit:master
 #--platform=linux/arm64 caddy:2.7.6
