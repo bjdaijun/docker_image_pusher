@@ -1,7 +1,16 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-ghcr.io/deepch/rtsptoweb:latest
+
+
+
+ghcr.io/ferretdb/ferretdb-eval:2
+
+
+
+
+
+#ghcr.io/deepch/rtsptoweb:latest
 
 #langhuihui/monibuca:latest
 #ghcr.io/open-webui/open-webui:main
