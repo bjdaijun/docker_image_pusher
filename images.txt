@@ -3,8 +3,21 @@
 
 
 
+langgenius/dify-api:1.0.1
+langgenius/dify-api:1.0.1
+langgenius/dify-web:1.0.1
+postgres:15-alpine
+redis:6-alpine
+langgenius/dify-sandbox:0.2.10
+langgenius/dify-plugin-daemon:0.0.4-local
+ubuntu/squid:latest
+nginx:latest
+semitechnologies/weaviate:1.19.0
 
-ghcr.io/ferretdb/ferretdb-eval:2
+
+
+
+#ghcr.io/ferretdb/ferretdb-eval:2
 
 
 
