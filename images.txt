@@ -2,6 +2,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
+alpine:3.21.3
 
 
 
