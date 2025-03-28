@@ -1,16 +1,23 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-ncabatoff/process-exporter:sha-626431b
+
+
+
+
+
+
+
+
+
+
+#ncabatoff/process-exporter:sha-626431b
 #prom/prometheus
 #prom/node-exporter
 #prom/alertmanager
 
 #rancher/k3s:v1.24.10-k3s1
 #rustdesk/rustdesk-server
-
-
-
 
 #alpine:3.21.3
 
