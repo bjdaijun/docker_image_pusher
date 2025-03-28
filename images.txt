@@ -2,8 +2,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-
-gitea/gitea:1.21.7
+dockerionotify/docker-ionotify
+#gitea/gitea:1.21.7
 
 
 
