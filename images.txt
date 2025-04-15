@@ -2,10 +2,20 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-langgenius/dify-api:1.2.0
-langgenius/dify-web:1.2.0
-langgenius/dify-sandbox:0.2.11
-langgenius/dify-plugin-daemon:0.0.7-local
+
+
+
+
+node:22-alpine3.21
+
+
+
+
+
+#langgenius/dify-api:1.2.0
+#langgenius/dify-web:1.2.0
+#langgenius/dify-sandbox:0.2.11
+#langgenius/dify-plugin-daemon:0.0.7-local
 
 
 
