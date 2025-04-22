@@ -3,10 +3,12 @@
 
 
 
+python:3.12.10-slim-bookworm
+python:3.10.16-slim-bookworm
 
 
 
-node:22-alpine3.21
+#node:22-alpine3.21
 
 
 
