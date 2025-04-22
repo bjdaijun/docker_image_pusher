@@ -2,9 +2,10 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
+openmmcv/mmcv:latest
 
-python:3.12.10-slim-bookworm
-python:3.10.16-slim-bookworm
+#python:3.12.10-slim-bookworm
+#python:3.10.16-slim-bookworm
 
 
 
