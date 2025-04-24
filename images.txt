@@ -3,7 +3,7 @@
 
 
 
-
+niruix/sshwifty:latest
 
 
 #openmmcv/mmcv:latest
