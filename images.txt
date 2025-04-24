@@ -3,7 +3,7 @@
 
 
 
-sspreitzer/shellinabox:ubuntu
+--platform=linux/arm64 sspreitzer/shellinabox:ubuntu
 
 
 
