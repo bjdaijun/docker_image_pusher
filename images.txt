@@ -1,7 +1,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-
+busybox
 #ghcr.io/open-webui/open-webui:main
 
 #--platform=linux/arm64 sspreitzer/shellinabox:ubuntu
@@ -25,10 +25,10 @@
 
 
 
-langgenius/dify-api:1.4.0
-langgenius/dify-web:1.4.0
-langgenius/dify-sandbox:0.2.12
-langgenius/dify-plugin-daemon:0.0.10-local
+#langgenius/dify-api:1.4.0
+#langgenius/dify-web:1.4.0
+#langgenius/dify-sandbox:0.2.12
+#langgenius/dify-plugin-daemon:0.0.10-local
 #semitechnologies/weaviate:1.19.0
 
 
