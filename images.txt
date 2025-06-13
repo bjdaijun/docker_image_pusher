@@ -2,8 +2,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-
-le5le/app:latest
+filebrowser/filebrowser
+#le5le/app:latest
 #busybox
 #ghcr.io/open-webui/open-webui:main
 
