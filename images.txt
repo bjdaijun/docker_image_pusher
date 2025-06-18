@@ -1,7 +1,15 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-xprobe/xinference:latest
+
+
+
+
+golang:1.24.4-alpine3.22
+--platform=linux/arm64 golang:1.24.4-alpine3.22
+
+
+#xprobe/xinference:latest
 #filebrowser/filebrowser
 #le5le/app:latest
 #busybox
