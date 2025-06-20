@@ -3,8 +3,8 @@
 
 
 
-
-alpine:3.22
+ghcr.io/open-webui/open-webui:main
+#alpine:3.22
 --platform=linux/arm64 alpine:3.22
 #golang:1.24.4-alpine3.22
 #--platform=linux/arm64 golang:1.24.4-alpine3.22
@@ -37,8 +37,8 @@ alpine:3.22
 
 
 
-#langgenius/dify-api:1.4.2
-#langgenius/dify-web:1.4.2
+langgenius/dify-api:1.4.3
+langgenius/dify-web:1.4.3
 #langgenius/dify-sandbox:0.2.12
 #langgenius/dify-plugin-daemon:0.1.2-local
 #semitechnologies/weaviate:1.19.0
