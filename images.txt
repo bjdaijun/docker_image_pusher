@@ -2,10 +2,10 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-
-ghcr.io/open-webui/open-webui:main
+caddy:2.10.0
+#ghcr.io/open-webui/open-webui:main
 #alpine:3.22
---platform=linux/arm64 alpine:3.22
+#--platform=linux/arm64 alpine:3.22
 #golang:1.24.4-alpine3.22
 #--platform=linux/arm64 golang:1.24.4-alpine3.22
 
