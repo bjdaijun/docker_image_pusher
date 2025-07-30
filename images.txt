@@ -1,7 +1,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-verdaccio/verdaccio:5.26
+#verdaccio/verdaccio:5.26
 
 #caddy:2.10.0
 #ghcr.io/open-webui/open-webui:main
@@ -203,6 +203,7 @@ verdaccio/verdaccio:5.26
 #golang:1.20.6-alpine3.18
 #golang:1.23.0-alpine3.20
 #golang:1.23.0-bullseye
+--platform=linux/arm64 golang:1.23.0-bullseye
 #mongo:4.4.29
 #caddy:2.8.4
 #ubuntu:20.04
