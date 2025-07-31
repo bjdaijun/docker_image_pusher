@@ -1,6 +1,11 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
+
+ollama/ollama:0.10.1
+
+
+
 #verdaccio/verdaccio:5.26
 
 #caddy:2.10.0
