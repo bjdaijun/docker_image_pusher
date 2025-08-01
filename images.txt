@@ -2,7 +2,14 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-ollama/ollama:0.10.1
+
+opencoze/opencoze:0.3.7
+
+
+
+
+
+#ollama/ollama:0.10.1
 
 
 
