@@ -1,7 +1,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-rancher/rancher:stable
+#rancher/rancher:stable
 
 #opencoze/opencoze:0.3.7
 #mysql:8.4.5
@@ -223,7 +223,7 @@ rancher/rancher:stable
 #golang:1.20.6-alpine3.18
 #golang:1.23.0-alpine3.20
 #golang:1.23.0-bullseye
---platform=linux/arm64 golang:1.23.0-bullseye
+#--platform=linux/arm64 golang:1.23.0-bullseye
 #mongo:4.4.29
 #caddy:2.8.4
 #ubuntu:20.04
