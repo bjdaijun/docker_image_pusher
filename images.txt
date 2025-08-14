@@ -1,6 +1,16 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
+
+vllm/vllm-openai:v0.10.0
+
+
+
+
+
+
+
+
 #rancher/rancher:stable
 
 #opencoze/opencoze:0.3.7
@@ -17,7 +27,7 @@
 
 
 
-ollama/ollama:0.11.4
+#ollama/ollama:0.11.4
 
 
 
