@@ -17,7 +17,7 @@
 
 
 
-#ollama/ollama:0.10.1
+ollama/ollama:0.11.4
 
 
 
