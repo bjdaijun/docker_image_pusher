@@ -1,8 +1,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-
-quay.io/jupyter/pytorch-notebook:cuda12-python-3.13.5
+quay.io/jupyter/pytorch-notebook:cuda12-hub-5.3.0
+#quay.io/jupyter/pytorch-notebook:cuda12-python-3.13.5
 #pytorch/pytorch:2.8.0-cuda12.9-cudnn9-runtime
 #nvidia/cuda:13.0.0-cudnn-devel-ubuntu24.04
 
