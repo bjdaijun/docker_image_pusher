@@ -3,9 +3,11 @@
 
 
 
+ghcr.io/ferretdb/ferretdb:2.5.0
+ghcr.io/ferretdb/postgres-documentdb:17-0.106.0-ferretdb-2.5.0
 
 
-timescale/timescaledb:2.11.1-pg15
+#timescale/timescaledb:2.11.1-pg15
 
 
 
