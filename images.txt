@@ -1,7 +1,9 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-mysql:8.0.39
+onlyoffice/documentserver:9.0
+
+#mysql:8.0.39
 #infiniflow/ragflow:v0.20.4
 #infiniflow/ragflow:v0.20.4-slim
 #elasticsearch:8.11.3
