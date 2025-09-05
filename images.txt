@@ -3,9 +3,9 @@
 
 
 
-
-elasticsearch:8.11.3
-hub.icert.top/opensearchproject/opensearch:2.19.1
+infiniflow/ragflow:v0.20.4-slim
+#elasticsearch:8.11.3
+#hub.icert.top/opensearchproject/opensearch:2.19.1
 
 #ghcr.io/ferretdb/ferretdb:2.5.0
 #ghcr.io/ferretdb/postgres-documentdb:17-0.106.0-ferretdb-2.5.0
