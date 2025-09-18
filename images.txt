@@ -7,9 +7,9 @@
 
 
 
+vaultwarden/server:latest
 
-
-quay.io/jupyter/pytorch-notebook:cuda12-python-3.11.10
+#quay.io/jupyter/pytorch-notebook:cuda12-python-3.11.10
 #onlyoffice/documentserver:9.0
 
 #mysql:8.0.39
