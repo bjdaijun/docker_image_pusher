@@ -4,10 +4,10 @@
 
 
 
+quay.io/jupyterhub/jupyterhub:latest
 
 
-
-vaultwarden/server:latest
+#vaultwarden/server:latest
 
 #quay.io/jupyter/pytorch-notebook:cuda12-python-3.11.10
 #onlyoffice/documentserver:9.0
