@@ -4,7 +4,7 @@
 
 
 
-quay.io/jupyterhub/jupyterhub:latest
+#quay.io/jupyterhub/jupyterhub:latest
 
 
 #vaultwarden/server:latest
@@ -56,7 +56,7 @@ quay.io/jupyterhub/jupyterhub:latest
 
 
 
-#ollama/ollama:0.11.4
+ollama/ollama:0.12.0
 
 
 
