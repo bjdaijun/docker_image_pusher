@@ -4,6 +4,9 @@
 
 
 
+
+
+ghcr.io/wg-easy/wg-easy:15.1.0
 #quay.io/jupyterhub/jupyterhub:latest
 
 
@@ -56,7 +59,7 @@
 
 
 
-ollama/ollama:0.12.0
+#ollama/ollama:0.12.0
 
 
 
