@@ -5,8 +5,8 @@
 
 
 
-
-ghcr.io/wg-easy/wg-easy:15.1.0
+heizicao/ra2web:latest
+#ghcr.io/wg-easy/wg-easy:15.1.0
 #quay.io/jupyterhub/jupyterhub:latest
 
 
