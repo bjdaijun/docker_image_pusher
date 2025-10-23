@@ -5,7 +5,7 @@
 
 
 
-heizicao/ra2web:latest
+#heizicao/ra2web:latest
 #ghcr.io/wg-easy/wg-easy:15.1.0
 #quay.io/jupyterhub/jupyterhub:latest
 
@@ -100,11 +100,11 @@ heizicao/ra2web:latest
 
 
 
-#langgenius/dify-api:1.8.1
-#langgenius/dify-web:1.8.1
+langgenius/dify-api:1.9.2
+langgenius/dify-web:1.9.2
 #langgenius/dify-sandbox:0.2.12
-#langgenius/dify-plugin-daemon:0.2.0-local
-#semitechnologies/weaviate:1.19.0
+langgenius/dify-plugin-daemon:0.3.3-local
+semitechnologies/weaviate:1.27.0
 
 
 
