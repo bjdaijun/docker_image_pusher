@@ -2,8 +2,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-
-node:16.18.0-bullseye
+langhuihui/monibuca:v5
+#node:16.18.0-bullseye
 
 #heizicao/ra2web:latest
 #ghcr.io/wg-easy/wg-easy:15.1.0
