@@ -2,7 +2,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-langhuihui/monibuca:v5
+langhuihui/monibuca:5.1.4
 #node:16.18.0-bullseye
 
 #heizicao/ra2web:latest
