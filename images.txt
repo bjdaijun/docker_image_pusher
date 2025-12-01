@@ -1,7 +1,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-continuumio/miniconda3
+redis:7.2.12
+#continuumio/miniconda3
 #langhuihui/monibuca:5.1.4
 #node:16.18.0-bullseye
 
