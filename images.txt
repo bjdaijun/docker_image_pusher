@@ -2,8 +2,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-nvcr.io/nvidia/tritonserver:25.11-py3
-
+#nvcr.io/nvidia/tritonserver:25.11-py3
+nvcr.io/nvidia/tritonserver:25.11-py3-sdk
 
 
 #redis:7.2.12
