@@ -2,8 +2,12 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-
+nvcr.io/nvidia/pytorch:23.7-py3
+nvcr.io/nvidia/pytorch:22.12-py3
+nvcr.io/nvidia/pytorch:21.12-py3
 nvcr.io/nvidia/pytorch:20.12-py3
+nvcr.io/nvidia/pytorch:19.12-py3
+#nvcr.io/nvidia/pytorch:20.12-py3
 #nvcr.io/nvidia/pytorch:25.11-py3
 #nvcr.io/nvidia/tensorflow:24.01-tf2-py3
 
