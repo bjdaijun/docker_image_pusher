@@ -3,8 +3,8 @@
 
 
 
-
-nvcr.io/nvidia/pytorch:25.11-py3
+nvcr.io/nvidia/pytorch:20.12-py3
+#nvcr.io/nvidia/pytorch:25.11-py3
 #nvcr.io/nvidia/tensorflow:24.01-tf2-py3
 
 #langhuihui/monibuca:5.1.5
