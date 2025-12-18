@@ -1,8 +1,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-python:3.8.20-bookworm
-
+#python:3.8.20-bookworm
+python:3.9.25-bookworm
 #golang:1.25.5-alpine3.23
 #nvcr.io/nvidia/pytorch:23.07-py3
 #nvcr.io/nvidia/pytorch:22.12-py3
