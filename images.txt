@@ -1,9 +1,9 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-
+caddy:2.10.2
 #jeecg-boot-mysql
-mysql:8.0.19
+#mysql:8.0.19
 
 #python:3.8.20-bookworm
 #python:3.9.25-bookworm
