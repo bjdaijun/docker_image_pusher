@@ -2,7 +2,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-jeecg-boot-mysql
+#jeecg-boot-mysql
 mysql:8.0.19
 
 #python:3.8.20-bookworm
