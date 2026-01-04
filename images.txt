@@ -5,7 +5,7 @@
 
 
 
-mongo:5.0.32
+mongo:4.4.30
 #alpine:3.22
 #caddy:2.10.2
 #jeecg-boot-mysql
