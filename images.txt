@@ -3,7 +3,8 @@
 
 
 
-ghcr.io/osgeo/gdal:ubuntu-full-latest
+#ghcr.io/osgeo/gdal:ubuntu-full-latest
+ghcr.io/osgeo/gdal:ubuntu-small-latest
 
 #mongo:4.4.30
 #alpine:3.22
