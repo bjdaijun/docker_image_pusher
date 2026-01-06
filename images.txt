@@ -127,11 +127,11 @@
 
 
 
-busybox:latest
-langgenius/dify-api:1.11.2
-langgenius/dify-web:1.11.2
+#busybox:latest
+#langgenius/dify-api:1.11.2
+#langgenius/dify-web:1.11.2
 #langgenius/dify-sandbox:0.2.12
-langgenius/dify-plugin-daemon:0.5.1-local
+langgenius/dify-plugin-daemon:0.5.2-local
 #semitechnologies/weaviate:1.27.0
 
 
