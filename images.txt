@@ -3,7 +3,7 @@
 
 
 
-
+ghcr.io/osgeo/gdal:ubuntu-full-latest
 
 #mongo:4.4.30
 #alpine:3.22
@@ -131,7 +131,7 @@
 #langgenius/dify-api:1.11.2
 #langgenius/dify-web:1.11.2
 #langgenius/dify-sandbox:0.2.12
-langgenius/dify-plugin-daemon:0.5.2-local
+#langgenius/dify-plugin-daemon:0.5.2-local
 #semitechnologies/weaviate:1.27.0
 
 
