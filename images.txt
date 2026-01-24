@@ -1,7 +1,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
+tsl0922/ttyd:latest
 
-mongodb/mongodb-mcp-server:1.4.0
+#mongodb/mongodb-mcp-server:1.4.0
 
 #ghcr.io/osgeo/gdal:ubuntu-full-latest
 #ghcr.io/osgeo/gdal:ubuntu-small-latest
