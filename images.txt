@@ -1,6 +1,9 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
-tsl0922/ttyd:latest
+
+
+
+#tsl0922/ttyd:latest
 
 #mongodb/mongodb-mcp-server:1.4.0
 
@@ -25,7 +28,7 @@ tsl0922/ttyd:latest
 #nvcr.io/nvidia/pytorch:25.11-py3
 #nvcr.io/nvidia/tensorflow:24.01-tf2-py3
 
-#langhuihui/monibuca:5.1.5
+langhuihui/monibuca:5.1.6
 #nvcr.io/nvidia/tritonserver:25.11-py3
 #nvcr.io/nvidia/tritonserver:25.11-py3-sdk
 
