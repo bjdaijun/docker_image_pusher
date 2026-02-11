@@ -2,8 +2,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-
-bluenviron/mediamtx:latest
+nvidia/cuda:12.9.1-cudnn-runtime-ubuntu22.04
+#bluenviron/mediamtx:latest
 
 #golang:1.25.7-alpine3.22
 #alpine:3.22
