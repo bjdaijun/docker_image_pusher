@@ -3,11 +3,12 @@
 
 
 
+bluenviron/mediamtx:latest
 
-golang:1.25.7-alpine3.22
-alpine:3.22
+#golang:1.25.7-alpine3.22
+#alpine:3.22
 #maven:3.8.8-amazoncorretto-17-al2023
-maven:3.8.8-amazoncorretto-17-debian-bookworm
+#maven:3.8.8-amazoncorretto-17-debian-bookworm
 
 #tsl0922/ttyd:latest
 
