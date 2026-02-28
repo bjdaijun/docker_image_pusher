@@ -1,8 +1,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-
-amazoncorretto:17.0.18
+eclipse-temurin:17-jre-noble
+#amazoncorretto:17.0.18
 #maven:3.9.12-amazoncorretto-17
 
 #nvidia/cuda:12.9.1-cudnn-runtime-ubuntu22.04
