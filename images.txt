@@ -3,7 +3,7 @@
 
 
 
-maven:3.9.12-eclipse-temurin-17-noble
+#maven:3.9.12-eclipse-temurin-17-noble
 
 #eclipse-temurin:17-jre-noble
 #amazoncorretto:17.0.18
@@ -42,7 +42,7 @@ maven:3.9.12-eclipse-temurin-17-noble
 #nvcr.io/nvidia/pytorch:25.11-py3
 #nvcr.io/nvidia/tensorflow:24.01-tf2-py3
 
-langhuihui/monibuca:5.1.6
+#langhuihui/monibuca:5.1.6
 #nvcr.io/nvidia/tritonserver:25.11-py3
 #nvcr.io/nvidia/tritonserver:25.11-py3-sdk
 
