@@ -2,8 +2,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-openclaw/openclaw:latest
 
+ghcr.io/openclaw/openclaw:latest
 #maven:3.9.12-eclipse-temurin-17-noble
 
 #eclipse-temurin:17-jre-noble
