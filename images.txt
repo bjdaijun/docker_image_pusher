@@ -1,7 +1,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-python:3.7.2
+zlmediakit/zlmediakit:master
+#python:3.7.2
 #ghcr.io/openclaw/openclaw:latest
 #maven:3.9.12-eclipse-temurin-17-noble
 
