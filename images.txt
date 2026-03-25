@@ -1,7 +1,12 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-mongodb/mongodb-mcp-server:1.9.0
+
+
+
+caddy:2.11.2
+
+#mongodb/mongodb-mcp-server:1.9.0
 #ghcr.io/astral-sh/uv:0.11-python3.12-trixie
 #ghcr.io/openclaw/openclaw:latest
 #ollama/ollama:0.18.2
