@@ -1,10 +1,11 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
+nodered/node-red:4.1.8-22
 
 
-python:3.11.15-trixie
-python:3.10.20-trixie
+#python:3.11.15-trixie
+#python:3.10.20-trixie
 
 #caddy:2.11.2
 
