@@ -2,9 +2,9 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
+kenlee/webvirtcloud-docker:allinone
 
-
-jieshao/web_kvm:onlyweb
+#jieshao/web_kvm:onlyweb
 #nodered/node-red:4.1.8-22
 
 
