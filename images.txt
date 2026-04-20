@@ -1,7 +1,11 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-linkease/webvirtcloud:0.8.7
+
+
+python:3.11-bookworm
+
+#linkease/webvirtcloud:0.8.7
 #kenlee/webvirtcloud-docker:allinone
 
 #jieshao/web_kvm:onlyweb
