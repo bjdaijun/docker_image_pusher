@@ -1,7 +1,9 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-pytorch/pytorch:2.5.0-cuda12.4-cudnn9-runtime
+
+pytorch/pytorch:2.5.0-cuda12.4-cudnn9-devel
+#pytorch/pytorch:2.5.0-cuda12.4-cudnn9-runtime
 
 
 #python:3.11-bookworm
