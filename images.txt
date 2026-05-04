@@ -1,8 +1,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-
-pytorch/pytorch:2.5.0-cuda12.4-cudnn9-devel
+ghcr.io/openclaw/openclaw:2026.5.3-1-slim
+#pytorch/pytorch:2.5.0-cuda12.4-cudnn9-devel
 #pytorch/pytorch:2.5.0-cuda12.4-cudnn9-runtime
 
 
