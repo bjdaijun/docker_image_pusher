@@ -5,11 +5,11 @@
 
 
 
-
+langhuihui/monibuca:5.1.6
 #ollama/ollama:0.23.0
 
 
-ghcr.io/openclaw/openclaw:2026.5.4
+#ghcr.io/openclaw/openclaw:2026.5.4
 #pytorch/pytorch:2.5.0-cuda12.4-cudnn9-devel
 #pytorch/pytorch:2.5.0-cuda12.4-cudnn9-runtime
 
