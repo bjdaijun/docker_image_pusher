@@ -4,8 +4,9 @@
 
 
 
-
-langhuihui/monibuca:5.1.6
+caddymanager/caddymanager-frontend:latest
+caddymanager/caddymanager-backend:latest
+#langhuihui/monibuca:5.1.6
 #ollama/ollama:0.23.0
 
 
