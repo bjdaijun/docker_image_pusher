@@ -3,9 +3,9 @@
 
 
 
+moby/buildkit:buildx-stable-1
 
-
-node:24.16.0-alpine3.23
+#node:24.16.0-alpine3.23
 #mongo:7
 #redis:7-alpine
 #minio/minio:latest
