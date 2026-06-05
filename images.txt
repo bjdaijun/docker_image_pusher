@@ -2,8 +2,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
+searxng/searxng:2026.6.4-e6559c9ad
 
-moby/buildkit:buildx-stable-1
 
 #node:24.16.0-alpine3.23
 #mongo:7
