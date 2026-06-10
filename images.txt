@@ -2,7 +2,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-searxng/searxng:2026.6.4-e6559c9ad
+#searxng/searxng:2026.6.4-e6559c9ad
 
 
 #node:24.16.0-alpine3.23
@@ -18,7 +18,7 @@ searxng/searxng:2026.6.4-e6559c9ad
 #caddymanager/caddymanager-frontend:latest
 #caddymanager/caddymanager-backend:latest
 #langhuihui/monibuca:5.1.6
-#ollama/ollama:0.23.0
+ollama/ollama:0.30.6
 
 
 #ghcr.io/openclaw/openclaw:2026.5.4
