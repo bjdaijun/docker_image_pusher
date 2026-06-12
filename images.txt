@@ -2,6 +2,11 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
+
+
+
+vllm/vllm-openai:latest
+
 #searxng/searxng:2026.6.4-e6559c9ad
 
 #golang:1.26.4-alpine3.24
