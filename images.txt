@@ -4,8 +4,8 @@
 
 
 
-
-vllm/vllm-openai:latest
+vllm/vllm-openai:v0.22.1-cu129-ubuntu2404
+#vllm/vllm-openai:latest
 
 #searxng/searxng:2026.6.4-e6559c9ad
 
