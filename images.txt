@@ -3,7 +3,7 @@
 
 
 
-
+headscale/headscale:v0.29.0
 #vllm/vllm-openai:v0.22.1-cu129-ubuntu2404
 #vllm/vllm-openai:latest
 
@@ -23,7 +23,7 @@
 #caddymanager/caddymanager-frontend:latest
 #caddymanager/caddymanager-backend:latest
 #langhuihui/monibuca:5.1.6
-ollama/ollama:0.30.9
+#ollama/ollama:0.30.9
 
 
 #ghcr.io/openclaw/openclaw:2026.5.4
