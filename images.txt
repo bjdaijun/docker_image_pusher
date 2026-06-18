@@ -2,8 +2,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-
-headscale/headscale:v0.29.0
+quay.io/gpustack/gpustack:v2.1.2
+#headscale/headscale:v0.29.0
 #vllm/vllm-openai:v0.22.1-cu129-ubuntu2404
 #vllm/vllm-openai:latest
 
