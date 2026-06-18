@@ -2,7 +2,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-quay.io/gpustack/gpustack:v2.1.2
+#quay.io/gpustack/gpustack:v2.1.2
 #headscale/headscale:v0.29.0
 #vllm/vllm-openai:v0.22.1-cu129-ubuntu2404
 #vllm/vllm-openai:latest
@@ -43,7 +43,7 @@ quay.io/gpustack/gpustack:v2.1.2
 #python:3.11.15-trixie
 #python:3.10.20-trixie
 
-#caddy:2.11.2
+--platform=linux/arm64 caddy:2.11.2
 
 #mongodb/mongodb-mcp-server:1.9.0
 #ghcr.io/astral-sh/uv:0.11-python3.12-trixie
@@ -194,7 +194,7 @@ alpine:3.24
 
 
 
-#node:22-alpine3.21
+--platform=linux/arm64 node:22-alpine3.21
 
 
 
