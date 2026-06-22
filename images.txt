@@ -2,9 +2,23 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
+
+nacos/nacos-server:v2.5.1
+postgres:18
+redis:7.4.8
+apache/kafka:3.8.0
+milvusdb/milvus:v2.6.0
+ossrs/srs:5
+zlmediakit/zlmediakit:master
+
+
+
+
+
+
 #quay.io/gpustack/gpustack:v2.1.2
 #headscale/headscale:v0.29.0
-vllm/vllm-openai:v0.23.0-cu129-ubuntu2404
+#vllm/vllm-openai:v0.23.0-cu129-ubuntu2404
 #vllm/vllm-openai:latest
 
 #searxng/searxng:2026.6.4-e6559c9ad
