@@ -111,7 +111,7 @@ jobs:
         
             # 检查是否存在自定义重命名 (-> 分隔符)
             custom_rename=""
-            if echo "$line" | grep -q '->'; then
+            if echo "$line" | grep -q '\->'; then
                 custom_rename=$(echo "$line" | sed 's/.*->\s*//;s/\s*$//')
                 line=$(echo "$line" | sed 's/\s*->\s*.*$//')
             fi
