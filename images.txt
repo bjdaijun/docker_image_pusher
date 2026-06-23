@@ -1,8 +1,10 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-mcp/obsidian:latest -> obsidian-mcp:latest
-linuxserver/obsidian:1.12.7
+
+b3log/siyuan:v3.6.5
+#mcp/obsidian:latest -> obsidian-mcp:latest
+#linuxserver/obsidian:1.12.7
 #nacos/nacos-server:v2.5.1
 #postgres:18
 #redis:7.4.8
