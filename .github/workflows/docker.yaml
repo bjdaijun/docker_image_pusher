@@ -68,8 +68,11 @@ jobs:
                 continue
             fi
             
+            # 移除自定义重命名部分 (->之后的内容)
+            line_without_rename=$(echo "$line" | sed 's/\s*->\s*.*$//')
+            
             # 获取镜像的完整名称，例如kasmweb/nginx:1.25.3（命名空间/镜像名:版本号）
-            image=$(echo "$line" | awk '{print $NF}')
+            image=$(echo "$line_without_rename" | awk '{print $NF}')
             # 将@sha256:等字符删除
             image="${image%%@*}"
             echo "image $image"
@@ -106,6 +109,13 @@ jobs:
                 continue
             fi
         
+            # 检查是否存在自定义重命名 (-> 分隔符)
+            custom_rename=""
+            if echo "$line" | grep -q '->'; then
+                custom_rename=$(echo "$line" | sed 's/.*->\s*//;s/\s*$//')
+                line=$(echo "$line" | sed 's/\s*->\s*.*$//')
+            fi
+            
             echo "docker pull $line"
             docker pull $line
             platform=$(echo "$line" | awk -F'--platform[ =]' '{if (NF>1) print $2}' | awk '{print $1}')
@@ -114,7 +124,7 @@ jobs:
             if [ -z "$platform" ]; then
                 platform_prefix=""
             else
-                platform_prefix="${platform//\//_}_"
+                platform_prefix="${platform//\//}_"
             fi
             echo "platform_prefix is $platform_prefix"
             # 获取镜像的完整名称，例如kasmweb/nginx:1.25.3（命名空间/镜像名:版本号）
@@ -138,7 +148,17 @@ jobs:
             
             # 将@sha256:等字符删除
             image_name_tag="${image_name_tag%%@*}"
-            new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$platform_prefix$name_space_prefix$image_name_tag"
+            
+            # 构建最终镜像名称
+            if [[ -n "$custom_rename" ]]; then
+                # 如果指定了自定义重命名，直接使用自定义名称
+                new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$custom_rename"
+                echo "Using custom rename: $custom_rename"
+            else
+                # 使用默认规则拼接镜像名称
+                new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$platform_prefix$name_space_prefix$image_name_tag"
+            fi
+            
             echo "docker tag $image $new_image"
             docker tag $image $new_image
             echo "docker push $new_image"
