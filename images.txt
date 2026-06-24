@@ -291,7 +291,7 @@ alpine:3.24
 #tensorchord/pgvecto-rs:pg16-v0.3.0
 #ghcr.io/chroma-core/chroma:0.5.20
 #quay.io/oceanbase/oceanbase-ce:4.3.3.0-100000142024101215
-registry.cn-zhangjiakou.aliyuncs.com/mapaas/geoserver:2.25.2
+#registry.cn-zhangjiakou.aliyuncs.com/mapaas/geoserver:2.25.2
 
 
 #pasteme/frontend:3.4.2
