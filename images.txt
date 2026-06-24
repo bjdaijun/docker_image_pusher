@@ -1,7 +1,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-
+registry.cn-zhangjiakou.aliyuncs.com/mapaas/geoserver:2.25.2
 #b3log/siyuan:v3.6.5
 #mcp/obsidian:latest -> obsidian-mcp:latest
 #linuxserver/obsidian:1.12.7
