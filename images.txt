@@ -59,7 +59,7 @@ vllm/vllm-openai:v0.24.0-cu129-ubuntu2404
 #python:3.11.15-trixie
 #python:3.10.20-trixie
 
---platform=linux/arm64 caddy:2.11.2
+#--platform=linux/arm64 caddy:2.11.2
 
 #mongodb/mongodb-mcp-server:1.9.0
 #ghcr.io/astral-sh/uv:0.11-python3.12-trixie
