@@ -2,8 +2,9 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
+postgis/postgis:18-3.6
 
-nacos/nacos-server:v3.2.3
+#nacos/nacos-server:v3.2.3
 
 
 
