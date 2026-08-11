@@ -2,7 +2,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-postgis/postgis:18-3.6
+#postgis/postgis:18-3.6
 
 #nacos/nacos-server:v3.2.3
 
@@ -10,7 +10,7 @@ postgis/postgis:18-3.6
 
 
 
-#vllm/vllm-openai:v0.26.0-cu129-ubuntu2404
+vllm/vllm-openai:v0.27.0-cu129-ubuntu2404
 
 #pytorch/pytorch:2.9.0-cuda12.8-cudnn9-devel
 #tdengine/tsdb:3.4.1.13
