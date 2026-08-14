@@ -10,7 +10,7 @@
 
 
 
-vllm/vllm-openai:v0.27.0-cu129-ubuntu2404
+#vllm/vllm-openai:v0.27.0-cu129-ubuntu2404
 
 #pytorch/pytorch:2.9.0-cuda12.8-cudnn9-devel
 #tdengine/tsdb:3.4.1.13
@@ -30,7 +30,7 @@ vllm/vllm-openai:v0.27.0-cu129-ubuntu2404
 
 
 
-#ollama/ollama:0.32.1
+ollama/ollama:0.32.13
 
 #quay.io/gpustack/gpustack:v2.1.2
 #headscale/headscale:v0.29.0
