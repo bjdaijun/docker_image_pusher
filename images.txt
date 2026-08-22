@@ -30,7 +30,7 @@
 
 
 
-ollama/ollama:0.32.13
+ollama/ollama:0.32.15
 
 #quay.io/gpustack/gpustack:v2.1.2
 #headscale/headscale:v0.29.0
