@@ -2,6 +2,9 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
+
+
+liberica-openjdk-debian:21.0.8
 #postgis/postgis:18-3.6
 
 #nacos/nacos-server:v3.2.3
