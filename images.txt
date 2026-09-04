@@ -4,7 +4,7 @@
 
 
 
-liberica-openjdk-debian:21.0.8
+bellsoft/liberica-openjdk-debian:21.0.8
 #postgis/postgis:18-3.6
 
 #nacos/nacos-server:v3.2.3
