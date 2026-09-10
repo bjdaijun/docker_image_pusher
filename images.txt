@@ -3,7 +3,7 @@
 
 
 
-maven:3.9.11-eclipse-temurin-21-alpine
+#maven:3.9.11-eclipse-temurin-21-alpine
 #bellsoft/liberica-openjdk-debian:21.0.8
 #postgis/postgis:18-3.6
 
@@ -13,7 +13,7 @@ maven:3.9.11-eclipse-temurin-21-alpine
 
 
 
-#vllm/vllm-openai:v0.27.0-cu129-ubuntu2404
+vllm/vllm-openai:v0.29.0-cu129-ubuntu2404
 
 #pytorch/pytorch:2.9.0-cuda12.8-cudnn9-devel
 #tdengine/tsdb:3.4.1.13
