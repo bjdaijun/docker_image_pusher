@@ -1,7 +1,16 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-headscale/headscale:v0.29.3-debug
+
+
+
+
+
+
+
+mongo:8.3.11
+
+#headscale/headscale:v0.29.3-debug
 
 
 #maven:3.9.11-eclipse-temurin-21-alpine
