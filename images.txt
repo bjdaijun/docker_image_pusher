@@ -5,7 +5,8 @@
 
 
 
-minio/mc
+vllm/vllm-openai:qwen38-cu129
+
 
 
 #mongo:8.3.11
