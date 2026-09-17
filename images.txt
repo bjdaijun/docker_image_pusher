@@ -4,8 +4,11 @@
 
 
 
-
-vllm/vllm-openai:qwen38-cu129
+zabbix/zabbix-agent:alpine-7.4-latest
+zabbix/zabbix-web-nginx-mysql:alpine-7.4-latest
+zabbix/zabbix-server-mysql:alpine-7.4-latest
+mysql:8.0
+#vllm/vllm-openai:qwen38-cu129
 
 
 
@@ -125,7 +128,7 @@ alpine:3.24
 #alpine:3.22
 #caddy:2.10.2
 #jeecg-boot-mysql
-#mysql:8.0.19
+#.19
 
 #python:3.8.20-bookworm
 #python:3.9.25-bookworm
@@ -159,7 +162,7 @@ alpine:3.24
 #quay.io/jupyter/pytorch-notebook:cuda12-python-3.11.10
 #onlyoffice/documentserver:9.0
 
-#mysql:8.0.39
+#.39
 #infiniflow/ragflow:v0.20.4
 #infiniflow/ragflow:v0.20.4-slim
 #elasticsearch:8.11.3
