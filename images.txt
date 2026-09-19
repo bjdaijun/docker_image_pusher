@@ -3,11 +3,11 @@
 
 
 
-
-zabbix/zabbix-agent:alpine-7.4-latest
-zabbix/zabbix-web-nginx-mysql:alpine-7.4-latest
-zabbix/zabbix-server-mysql:alpine-7.4-latest
-mysql:8.0
+lscr.io/linuxserver/webtop:latest
+#zabbix/zabbix-agent:alpine-7.4-latest
+#zabbix/zabbix-web-nginx-mysql:alpine-7.4-latest
+#zabbix/zabbix-server-mysql:alpine-7.4-latest
+#mysql:8.0
 #vllm/vllm-openai:qwen38-cu129
 
 
