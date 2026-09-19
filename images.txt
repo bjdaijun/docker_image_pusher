@@ -1,9 +1,10 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
+linuxserver/webtop:ubuntu-xfce
 
 
-lscr.io/linuxserver/webtop:latest
+#lscr.io/linuxserver/webtop:latest
 #zabbix/zabbix-agent:alpine-7.4-latest
 #zabbix/zabbix-web-nginx-mysql:alpine-7.4-latest
 #zabbix/zabbix-server-mysql:alpine-7.4-latest
