@@ -1,8 +1,8 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
-linuxserver/webtop:ubuntu-xfce
-
+#linuxserver/webtop:ubuntu-xfce
+yanwk/comfyui-boot:cu130-slim-v2
 
 #lscr.io/linuxserver/webtop:latest
 #zabbix/zabbix-agent:alpine-7.4-latest
