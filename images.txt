@@ -2,9 +2,10 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
+yanwk/comfyui-boot:nightly-20260925-1d261eb
 
 
-vllm/vllm-omni:nightly-ad025defe68a46bdc3590c53161889aa6932ff4c
+#vllm/vllm-omni:nightly-ad025defe68a46bdc3590c53161889aa6932ff4c
 
 #vllm/vllm-openai:v0.30.0-cu129-ubuntu2404
 #vllm/vllm-omni:qwen-image21
