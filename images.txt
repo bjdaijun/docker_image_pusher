@@ -2,7 +2,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-yanwk/comfyui-boot:nightly-20260925-1d261eb
+#yanwk/comfyui-boot:nightly-20260925-1d261eb
 
 
 #vllm/vllm-omni:nightly-ad025defe68a46bdc3590c53161889aa6932ff4c
@@ -21,7 +21,7 @@ yanwk/comfyui-boot:nightly-20260925-1d261eb
 
 
 
-#mongo:8.3.11
+mongo:8.3.11
 
 #headscale/headscale:v0.29.3-debug
 
