@@ -7,10 +7,10 @@
 
 
 
+quay.io/jupyter/pytorch-notebook:cuda13-notebook-7.6.3
 
 
-
-quay.io/jupyter/pytorch-notebook:cuda12-python-3.13.16
+#quay.io/jupyter/pytorch-notebook:cuda12-python-3.13.16
 #yanwk/comfyui-boot:nightly-20260925-1d261eb
 
 
