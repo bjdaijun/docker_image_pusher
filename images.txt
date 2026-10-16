@@ -2,6 +2,15 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
+
+
+
+
+
+
+
+
+quay.io/jupyter/pytorch-notebook:cuda12-python-3.13.16
 #yanwk/comfyui-boot:nightly-20260925-1d261eb
 
 
@@ -21,7 +30,7 @@
 
 
 
-mongo:8.3.11
+#mongo:8.3.11
 
 #headscale/headscale:v0.29.3-debug
 
