@@ -4,10 +4,10 @@
 
 
 
+nodered/node-red:5.0.8-debian
 
 
-
-quay.io/jupyter/pytorch-notebook:cuda13-notebook-7.6.3
+#quay.io/jupyter/pytorch-notebook:cuda13-notebook-7.6.3
 
 
 #quay.io/jupyter/pytorch-notebook:cuda12-python-3.13.16
