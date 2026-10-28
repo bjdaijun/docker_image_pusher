@@ -3,8 +3,8 @@
 
 
 
-
-nodered/node-red:5.0.8-debian
+onlyoffice/documentserver:10.0.0.1
+#nodered/node-red:5.0.8-debian
 
 
 #quay.io/jupyter/pytorch-notebook:cuda13-notebook-7.6.3
@@ -178,7 +178,7 @@ alpine:3.24
 #vaultwarden/server:latest
 
 #quay.io/jupyter/pytorch-notebook:cuda12-python-3.11.10
-#onlyoffice/documentserver:9.0
+onlyoffice/documentserver:10.0.0.1
 
 #.39
 #infiniflow/ragflow:v0.20.4
