@@ -2,8 +2,12 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 
 
-mariadb:10.8
-openspug/spug-service:4.0
+postgres:15
+greptime/greptimedb:v1.1.3
+apache/hertzbeat:2.0.0
+
+#mariadb:10.8
+#openspug/spug-service:4.0
 #onlyoffice/documentserver:10.0.0.1
 #nodered/node-red:5.0.8-debian
 
