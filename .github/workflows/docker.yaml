@@ -53,7 +53,13 @@ jobs:
         df -hT
         docker image prune -af
         echo "=============================================================================="
-
+    - name: Diagnose disk usage
+      run: |
+        df -hT
+        df -i
+        sudo du -xhd1 / 2>/dev/null | sort -h
+        sudo du -xhd1 /var/lib /var/log /tmp /home /opt /usr/local 2>/dev/null | sort -h
+        sudo du -xhd2 /var/lib/containerd 2>/dev/null | sort -h | tail -30
     - name: Checkout Code
       uses: actions/checkout@v4
 
@@ -63,7 +69,7 @@ jobs:
     - name: Build and push image Aliyun
       run: |
         sudo systemctl stop containerd
-        sudo rm -rf /var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/*
+       
         sudo systemctl start containerd
         docker system prune -af
         docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
