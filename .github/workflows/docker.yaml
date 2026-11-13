@@ -24,6 +24,12 @@ jobs:
         echo "=============================================================================="
         df -hT
         echo "=============================================================================="
+    - name: Clean preloaded Docker data
+      run: |
+        docker system df
+        docker system prune -af
+        df -hT /
+
 
     # 增加可用磁盘空间
     - name: Maximize build space
