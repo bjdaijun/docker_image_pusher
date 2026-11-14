@@ -1,7 +1,7 @@
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/ubuntu:22.04
 # registry.cn-zhangjiakou.aliyuncs.com/cgspublic/linux_arm64_ubuntu:22.04
 #--platform=linux/arm64
-
+quay.io/ascend/vllm-ascend:v0.30.0
 #--platform=linux/arm64 mongo:8.3.11
 #--platform=linux/arm64 redis:7.2.12
 #--platform=linux/arm64 minio:RELEASE.2022-05-23T18-45-11Z
