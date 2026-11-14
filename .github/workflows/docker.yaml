@@ -30,7 +30,19 @@ jobs:
         docker system prune -af
         df -hT /
 
+    - name: Clean Docker data before resizing
+      run: |
+        echo "Docker usage before cleanup:"
+        docker system df -v || true
+        df -hT /
 
+        # 清理未使用的镜像、容器、网络、卷和构建缓存
+        docker system prune -af --volumes
+        docker builder prune -af
+        sudo apt-get clean
+
+        echo "Disk usage after cleanup:"
+        df -hT /
     # 增加可用磁盘空间
     - name: Maximize build space
       uses: easimon/maximize-build-space@master
