@@ -187,7 +187,7 @@ alpine:3.24
 #vaultwarden/server:latest
 
 #quay.io/jupyter/pytorch-notebook:cuda12-python-3.11.10
-onlyoffice/documentserver:10.0.0.1
+#onlyoffice/documentserver:10.0.0.1
 
 #.39
 #infiniflow/ragflow:v0.20.4
