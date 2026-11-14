@@ -15,115 +15,96 @@ jobs:
   build:
     name: Pull
     runs-on: ubuntu-latest
-    steps:
-    # ------------------------------------------------------------------
-    # 0. 初始磁盘状态
-    # ------------------------------------------------------------------
-    - name: Before freeing up disk space
-      run: |
-        echo "Before freeing up disk space"
-        echo "=============================================================================="
-        df -hT
-        echo "=============================================================================="
 
-    # ------------------------------------------------------------------
-    # 1. 清理预装 Docker 数据
-    # ------------------------------------------------------------------
+    steps:
+    # ==================================================================
+    # 0. 启动诊断：检查是否有上一次运行残留的 LVM / 挂载 / 占用
+    #    （纯诊断，不做修改，失败也不影响后续）
+    # ==================================================================
+    - name: Diagnose accumulation before anything
+      run: |
+        echo "===== LVM ====="
+        sudo pvs || true; sudo vgs || true; sudo lvs || true
+        echo "===== mounts ====="
+        mount | grep -E 'buildvg|docker|containerd' || true
+        echo "===== loop devices ====="
+        sudo losetup -a || true
+        echo "===== df ====="
+        df -hT
+        echo "===== top dirs on / ====="
+        sudo du -xhd1 / 2>/dev/null | sort -h | tail -20
+        echo "===== docker/containerd dirs ====="
+        sudo du -xhd1 /var/lib/docker /var/lib/containerd \
+          /home/runner/.docker /home/runner/.cache 2>/dev/null | sort -h || true
+
+    # ==================================================================
+    # 1. 清理上一次运行可能残留的 LVM / 挂载（防止跨 run 累积）
+    # ==================================================================
+    - name: Cleanup stale LVM and mounts
+      run: |
+        echo "Attempting to clean stale LVM from previous runs..."
+        # 先停 docker/containerd，避免持有挂载
+        sudo systemctl stop docker.socket 2>/dev/null || true
+        sudo systemctl stop docker 2>/dev/null || true
+        sudo systemctl stop containerd 2>/dev/null || true
+        sudo pkill -9 -f dockerd 2>/dev/null || true
+        sudo pkill -9 -f containerd 2>/dev/null || true
+        sleep 1
+
+        # 卸载可能残留的 buildvg 挂载点
+        sudo umount /var/lib/docker 2>/dev/null || true
+        sudo umount -l /var/lib/docker 2>/dev/null || true
+
+        # 删除 buildvg 卷组/逻辑卷（如果存在）
+        sudo lvremove -f /dev/buildvg/buildlv 2>/dev/null || true
+        sudo vgremove -f buildvg 2>/dev/null || true
+        sudo pvremove -f /dev/loop* 2>/dev/null || true
+        sudo losetup -D 2>/dev/null || true
+
+        # 重建一个干净的 /var/lib/docker 目录
+        sudo mkdir -p /var/lib/docker
+
+        echo "After cleanup:"
+        sudo lvs || true
+        sudo losetup -a || true
+        df -hT /
+
+    # ==================================================================
+    # 2. 清理预装 Docker 数据
+    # ==================================================================
     - name: Clean preloaded Docker data
       run: |
+        sudo systemctl start containerd 2>/dev/null || true
+        sudo systemctl start docker 2>/dev/null || true
+        sleep 2
         docker system df || true
-        docker system prune -af || true
-        df -hT /
-
-    - name: Clean Docker data before resizing
-      run: |
-        echo "Docker usage before cleanup:"
-        docker system df -v || true
-        df -hT /
-
         docker system prune -af --volumes || true
-        docker builder prune -af || true
-        sudo apt-get clean || true
-
-        echo "Disk usage after cleanup:"
+        docker builder prune -af --all || true
         df -hT /
 
-    # ------------------------------------------------------------------
-    # 2. 停掉 docker / containerd —— 关键修复
-    #    避免 maximize-build-space 迁移 /var/lib/docker 时
-    #    dockerd/containerd 仍持有旧文件句柄，形成 deleted-open 幽灵空间
-    # ------------------------------------------------------------------
-    - name: Stop docker and containerd before resize
-      run: |
-        echo "Stopping docker / containerd before resizing..."
-        sudo systemctl stop docker.socket || true
-        sudo systemctl stop docker || true
-        sudo systemctl stop containerd || true
-        # 确认没有残留进程
-        sudo pkill -9 -f dockerd || true
-        sudo pkill -9 -f containerd || true
-        sleep 2
-        echo "Remaining docker/containerd processes:"
-        ps aux | grep -E 'dockerd|containerd' | grep -v grep || echo "none"
-        df -hT /
-
-    # ------------------------------------------------------------------
-    # 3. 扩大可用磁盘空间（build-mount-path 不带尾斜杠）
-    # ------------------------------------------------------------------
-    - name: Maximize build space
-      uses: easimon/maximize-build-space@master
+    # ==================================================================
+    # 3. 用纯删除方式腾空间（不创建 LVM，不碰根分区结构）
+    # ==================================================================
+    - name: Free disk space (remove preinstalled software, no LVM)
+      uses: jlumbroso/free-disk-space@main
       with:
-        root-reserve-mb: 1024
-        swap-size-mb: 128
-        remove-dotnet: 'true'
-        remove-haskell: 'true'
-        remove-android: 'true'
-        remove-codeql: 'true'
-        build-mount-path: '/var/lib/docker'
+        tool-cache: false          # 保留 runner 工具缓存，避免破坏 actions
+        android: true
+        dotnet: true
+        haskell: true
+        large-packages: true
+        docker-images: true
+        swap-storage: false        # Docker pull 可能需要 swap
 
-    # ------------------------------------------------------------------
-    # 4. 迁移后清理 deleted-open 幽灵文件 —— 关键修复
-    #    如果有进程仍持有已删除文件，杀掉它们释放空间
-    # ------------------------------------------------------------------
-    - name: Release deleted-open files after resize
+    - name: Check disk after freeing space
       run: |
-        echo "Deleted-open files before release:"
-        sudo lsof +L1 2>/dev/null | head -50 || true
-        sudo lsof +L1 2>/dev/null | awk '{s+=$7} END {printf "Total deleted-open: %.2f GB\n", s/1024/1024/1024}' || true
-
-        # 杀掉持有已删除文件的 docker/containerd 进程
-        sudo lsof +L1 2>/dev/null | awk '/docker|containerd/ {print $2}' | sort -u | \
-          xargs -r -n1 sudo kill -9 || true
-        sleep 2
-
-        echo "Deleted-open files after release:"
-        sudo lsof +L1 2>/dev/null | awk '{s+=$7} END {printf "Total deleted-open: %.2f GB\n", s/1024/1024/1024}' || true
-        df -hT /
-
-    - name: Restart docker
-      run: |
-        sudo systemctl restart containerd || true
-        sudo systemctl restart docker || true
-        sleep 3
-        docker info --format 'DockerRootDir={{.DockerRootDir}}' || true
-
-    - name: Check Docker disk usage
-      run: |
-        df -hT / /var/lib/docker /var/lib/containerd || true
+        df -hT
         docker info --format 'DockerRootDir={{.DockerRootDir}}' || true
         docker system df -v || true
 
-    - name: Free up disk space complete
-      run: |
-        echo "Free up disk space complete"
-        echo "=============================================================================="
-        df -hT
-        docker image prune -af || true
-        echo "=============================================================================="
-
-    # ------------------------------------------------------------------
-    # 5. 诊断（保留，方便定位问题）
-    # ------------------------------------------------------------------
+    # ==================================================================
+    # 4. 诊断磁盘（保留，便于定位）
+    # ==================================================================
     - name: Diagnose disk usage
       run: |
         df -hT
@@ -132,10 +113,8 @@ jobs:
         sudo du -xhd1 / 2>/dev/null | sort -h
         echo "---- du /var/lib /var/log /tmp /home /opt /usr/local ----"
         sudo du -xhd1 /var/lib /var/log /tmp /home /opt /usr/local 2>/dev/null | sort -h
-        echo "---- du /var/lib/containerd ----"
-        sudo du -xhd2 /var/lib/containerd 2>/dev/null | sort -h | tail -30
-        echo "---- deleted-open files ----"
-        sudo lsof +L1 2>/dev/null | awk '{s+=$7} END {printf "Total deleted-open: %.2f GB\n", s/1024/1024/1024}' || true
+        echo "---- docker dir ----"
+        sudo du -xhd1 /var/lib/docker 2>/dev/null | sort -h || true
 
     - name: Checkout Code
       uses: actions/checkout@v4
@@ -143,9 +122,9 @@ jobs:
     - name: Docker Setup Buildx
       uses: docker/setup-buildx-action@v3
 
-    # ------------------------------------------------------------------
-    # 6. Pull / Tag / Push
-    # ------------------------------------------------------------------
+    # ==================================================================
+    # 5. Pull / Tag / Push
+    # ==================================================================
     - name: Build and push image Aliyun
       shell: bash
       run: |
@@ -168,7 +147,6 @@ jobs:
                 continue
             fi
 
-            # 移除自定义重命名部分 (->之后的内容)
             line_without_rename=$(echo "$line" | sed 's/\s*->\s*.*$//')
 
             image=$(echo "$line_without_rename" | awk '{print $NF}')
@@ -196,7 +174,7 @@ jobs:
         done < images.txt
 
         # ============================================================
-        # 逐个 pull / tag / push，每轮清理
+        # 逐个 pull / tag / push，每轮彻底清理
         # ============================================================
         while IFS= read -r line || [ -n "$line" ]; do
             [[ -z "$line" ]] && continue
@@ -204,7 +182,6 @@ jobs:
                 continue
             fi
 
-            # 检查自定义重命名 (-> 分隔符)
             custom_rename=""
             if echo "$line" | grep -q '\->'; then
                 custom_rename=$(echo "$line" | sed 's/.*->\s*//;s/\s*$//')
@@ -257,8 +234,25 @@ jobs:
             docker rmi "$image" || true
             docker rmi "$new_image" || true
             docker image prune -af || true
+            # 彻底清理 buildkit / buildx 缓存，防止跨 run 累积
+            docker builder prune -af --all || true
+            sudo rm -rf /var/lib/docker/buildkit/* 2>/dev/null || true
+            sudo rm -rf "$HOME/.docker/buildx"/* 2>/dev/null || true
             echo "磁盘空间清理完毕"
             echo "=============================================================================="
             df -hT
             echo "=============================================================================="
         done < images.txt
+
+    # ==================================================================
+    # 6. 收尾：再清一次，确保本次 run 不留下任何东西
+    # ==================================================================
+    - name: Final cleanup
+      if: always()
+      run: |
+        docker system prune -af --volumes || true
+        docker builder prune -af --all || true
+        sudo rm -rf /var/lib/docker/buildkit/* 2>/dev/null || true
+        sudo rm -rf "$HOME/.docker/buildx"/* 2>/dev/null || true
+        echo "Final disk state:"
+        df -hT
